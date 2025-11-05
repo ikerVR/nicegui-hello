@@ -10,7 +10,7 @@ WORKDIR /app
 COPY main.py /app/
 
 # 🔽 AQUI va la línea que preguntas (instala dependencias)
-RUN pip install --no-cache-dir nicegui==1.* uvicorn SQLAlchemy psycopg[binary]
+RUN pip install --no-cache-dir nicegui==1.* uvicorn SQLAlchemy psycopg2-binary
 
 # puerto interno de la app
 ENV PORT=8080
